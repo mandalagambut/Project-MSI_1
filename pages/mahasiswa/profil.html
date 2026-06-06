@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Profil Mahasiswa | TP Consult</title>
+
+<link rel="stylesheet"
+href="profil.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>TP Consult</h2>
+
+            <span>Mahasiswa</span>
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="mahasiswa-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="pengajuan.html">
+                Ajukan Konsultasi
+            </a>
+
+            <a href="riwayat.html">
+                Riwayat Konsultasi
+            </a>
+
+            <a href="notifikasi.html">
+                Notifikasi
+            </a>
+
+            <a href="#" class="active">
+                Profil
+            </a>
+
+            <a href="../../index.html"
+               onclick="logout()">
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Profil Mahasiswa</h1>
+
+                <p>
+                    Informasi akun dan data mahasiswa
+                </p>
+
+            </div>
+
+            <button onclick="toggleTheme()">
+
+                🌙 Dark Mode
+
+            </button>
+
+        </header>
+
+        <section class="profile-card">
+
+            <div class="profile-header">
+
+                <img
+                id="profilePreview"
+                src="https://ui-avatars.com/api/?name=User&background=14b8a6&color=fff&size=200"
+                alt="Foto Profil">
+
+                <div>
+
+                    <h2>User</h2>
+
+                    <p>
+                        Mahasiswa Teknologi Pendidikan
+                    </p>
+
+                    <label
+                    class="upload-btn">
+
+                        Ganti Foto
+
+                        <input
+                        type="file"
+                        id="photoInput"
+                        hidden>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="profile-grid">
+
+                <div class="info-box">
+
+                    <label>NIM</label>
+
+                    <p>2410130000000</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <label>Program Studi</label>
+
+                    <p>Teknologi Pendidikan</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <label>Fakultas</label>
+
+                    <p>FKIP</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <label>Angkatan</label>
+
+                    <p>2024</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <label>Semester</label>
+
+                    <p>4</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <label>Email</label>
+
+                    <p>user@student.ac.id</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <label>Nomor HP</label>
+
+                    <p>08xxxxxxxxxx</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+
+                <h3>Total Konsultasi</h3>
+
+                <h2>12</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Disetujui</h3>
+
+                <h2>8</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Pending</h3>
+
+                <h2>3</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Selesai</h3>
+
+                <h2>7</h2>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="profil.js"></script>
+
+</body>
+
+</html>

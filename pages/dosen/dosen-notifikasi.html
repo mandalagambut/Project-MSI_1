@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Notifikasi</title>
+
+<link rel="stylesheet"
+href="dosen-notifikasi.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+
+        <a href="dosen-dashboard.html"
+           class="back-btn">
+
+           ← Dashboard
+
+        </a>
+
+    </div>
+
+    <div class="page-header">
+
+        <h1>Notifikasi</h1>
+
+        <p>
+            Informasi terbaru terkait
+            aktivitas konsultasi mahasiswa.
+        </p>
+
+    </div>
+
+    <div class="notification-actions">
+
+        <button onclick="markAllRead()">
+
+            Tandai Semua Dibaca
+
+        </button>
+
+    </div>
+
+    <div class="notification-list">
+
+        <!-- NOTIFIKASI 1 -->
+
+        <div class="notification-card unread">
+
+            <div class="notification-icon">
+
+                🔔
+
+            </div>
+
+            <div class="notification-content">
+
+                <h3>
+
+                    Pengajuan Konsultasi Baru
+
+                </h3>
+
+                <p>
+
+                    User mengajukan konsultasi
+                    Media Pembelajaran Digital.
+
+                </p>
+
+                <span>
+
+                    10 menit yang lalu
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- NOTIFIKASI 2 -->
+
+        <div class="notification-card unread">
+
+            <div class="notification-icon">
+
+                📅
+
+            </div>
+
+            <div class="notification-content">
+
+                <h3>
+
+                    Jadwal Konsultasi
+
+                </h3>
+
+                <p>
+
+                    Konsultasi dengan User
+                    berlangsung pukul 13:00 WIB.
+
+                </p>
+
+                <span>
+
+                    1 jam yang lalu
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- NOTIFIKASI 3 -->
+
+        <div class="notification-card">
+
+            <div class="notification-icon">
+
+                📄
+
+            </div>
+
+            <div class="notification-content">
+
+                <h3>
+
+                    Revisi Diterima
+
+                </h3>
+
+                <p>
+
+                    User telah mengunggah revisi
+                    storyboard media pembelajaran.
+
+                </p>
+
+                <span>
+
+                    Kemarin
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- NOTIFIKASI 4 -->
+
+        <div class="notification-card">
+
+            <div class="notification-icon">
+
+                ✅
+
+            </div>
+
+            <div class="notification-content">
+
+                <h3>
+
+                    Konsultasi Selesai
+
+                </h3>
+
+                <p>
+
+                    Konsultasi mengenai
+                    E-Learning telah selesai.
+
+                </p>
+
+                <span>
+
+                    2 hari yang lalu
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="dosen-notifikasi.js"></script>
+
+</body>
+
+</html>

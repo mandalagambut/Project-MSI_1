@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mahasiswa | TP Consult</title>
+
+    <link rel="stylesheet" href="mahasiswa-dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>TP Consult</h2>
+            <span>Mahasiswa</span>
+        </div>
+
+        <nav class="menu">
+            <a href="#" class="active">Dashboard</a>
+            <a href="pengajuan.html">Ajukan Konsultasi</a>
+            <a href="riwayat.html">Riwayat Konsultasi</a>
+            <a href="notifikasi.html">Notifikasi</a>
+            <a href="profil.html">Profil</a>
+            <a href="../../index.html" onclick="logout()">
+                Logout
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard Mahasiswa</h1>
+                <p id="namaMahasiswa">User</p>
+            </div>
+
+            <button onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <section class="progress-section">
+
+    <div class="card progress-card">
+
+        <div class="progress-header">
+
+            <div>
+
+                <h3>Progress Konsultasi Akademik</h3>
+
+                <p>
+                    Pantau perkembangan proses konsultasi Anda
+                </p>
+
+            </div>
+
+            <span class="progress-status">
+
+                Konsultasi Berlangsung
+
+            </span>
+
+        </div>
+
+        <div class="progress-steps">
+
+            <div class="step completed">
+
+                <div class="circle">✓</div>
+
+                <span>Pengajuan</span>
+
+            </div>
+
+            <div class="line active"></div>
+
+            <div class="step completed">
+
+                <div class="circle">✓</div>
+
+                <span>Disetujui</span>
+
+            </div>
+
+            <div class="line active"></div>
+
+            <div class="step completed">
+
+                <div class="circle">✓</div>
+
+                <span>Jadwal</span>
+
+            </div>
+
+            <div class="line active"></div>
+
+            <div class="step current">
+
+                <div class="circle">●</div>
+
+                <span>Konsultasi</span>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+
+                <div class="circle">○</div>
+
+                <span>Selesai</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section class="dashboard-grid">
+
+            <div class="card">
+
+                <h3>Jadwal Konsultasi Berikutnya</h3>
+
+                <div class="schedule-box">
+
+                    <h4>Media Pembelajaran Digital</h4>
+
+                    <p>Dosen, M.Pd.</p>
+
+                    <span>
+                        20 Juni 2026 • 09:00 WIB
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Kategori Konsultasi</h3>
+
+                <div class="course-card">
+                    Media Pembelajaran
+                </div>
+
+                <div class="course-card">
+                    E-Learning
+                </div>
+
+                <div class="course-card">
+                    Desain Pembelajaran
+                </div>
+
+                <div class="course-card">
+                    Evaluasi Pembelajaran
+                </div>
+
+            </div>
+
+            <div class="card wide">
+
+                <h3>Status Pengajuan Terbaru</h3>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Kategori</th>
+                            <th>Dosen</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>18 Juni 2026</td>
+                            <td>Media Pembelajaran</td>
+                            <td>Dosen, M.Pd.</td>
+                            <td>
+                                <span class="badge success">
+                                    Disetujui
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>17 Juni 2026</td>
+                            <td>E-Learning</td>
+                            <td>Dosen, M.Pd.</td>
+                            <td>
+                                <span class="badge pending">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="mahasiswa-dashboard.js"></script>
+
+</body>
+</html>

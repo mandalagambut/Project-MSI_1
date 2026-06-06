@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Riwayat Konsultasi | TP Consult</title>
+
+<link rel="stylesheet"
+href="riwayat.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>TP Consult</h2>
+            <span>Mahasiswa</span>
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="mahasiswa-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="pengajuan.html">
+                Ajukan Konsultasi
+            </a>
+
+            <a href="#" class="active">
+                Riwayat Konsultasi
+            </a>
+
+            <a href="notifikasi.html">
+                Notifikasi
+            </a>
+
+            <a href="../../index.html"
+               onclick="logout()">
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Riwayat Konsultasi</h1>
+
+                <p>
+                    Daftar seluruh konsultasi yang pernah diajukan.
+                </p>
+
+            </div>
+
+            <button onclick="toggleTheme()">
+
+                🌙 Dark Mode
+
+            </button>
+
+        </header>
+
+        <section class="filter-section">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari konsultasi...">
+
+            <select id="filterStatus">
+
+                <option value="all">
+                    Semua Status
+                </option>
+
+                <option value="Disetujui">
+                    Disetujui
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+                <option value="Ditolak">
+                    Ditolak
+                </option>
+
+            </select>
+
+        </section>
+
+        <section class="history-card">
+
+            <table id="historyTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Tanggal</th>
+                        <th>Jenis</th>
+                        <th>Kategori</th>
+                        <th>Dosen</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>20 Juni 2026</td>
+                        <td>Akademik</td>
+                        <td>Media Pembelajaran</td>
+                        <td>Dosen, M.Pd.</td>
+
+                        <td>
+
+                            <span class="badge success">
+                                Disetujui
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>18 Juni 2026</td>
+                        <td>Non-Akademik</td>
+                        <td>Karier dan Profesi</td>
+                        <td>Dosen, M.Ed.</td>
+
+                        <td>
+
+                            <span class="badge pending">
+                                Pending
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>15 Juni 2026</td>
+                        <td>Akademik</td>
+                        <td>Skripsi</td>
+                        <td>Dosen, M.T.</td>
+
+                        <td>
+
+                            <span class="badge rejected">
+                                Ditolak
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>10 Juni 2026</td>
+                        <td>Akademik</td>
+                        <td>E-Learning</td>
+                        <td>Dosen, M.Kom.</td>
+
+                        <td>
+
+                            <span class="badge success">
+                                Disetujui
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="riwayat.js"></script>
+
+</body>
+
+</html>

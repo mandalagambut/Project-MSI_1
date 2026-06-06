@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Jadwal Konsultasi</title>
+
+<link rel="stylesheet"
+      href="dosen-jadwal.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+
+        <a href="dosen-dashboard.html"
+           class="back-btn">
+
+           ← Dashboard
+
+        </a>
+
+    </div>
+
+    <div class="page-header">
+
+        <h1>Jadwal Konsultasi</h1>
+
+        <p>
+            Kelola jadwal konsultasi mahasiswa
+            Teknologi Pendidikan.
+        </p>
+
+    </div>
+
+    <div class="schedule-section">
+
+        <h2>Hari Ini</h2>
+
+        <div class="schedule-card">
+
+            <div class="schedule-time">
+
+                09:00 - 10:00 WIB
+
+            </div>
+
+            <div class="schedule-info">
+
+                <h3>User</h3>
+
+                <p>
+                    Semester 6 •
+                    Media Pembelajaran Digital
+                </p>
+
+            </div>
+
+            <div class="schedule-action">
+
+                <button class="detail-btn">
+
+                    Detail
+
+                </button>
+
+                <button class="finish-btn"
+                        onclick="finishConsultation(this)">
+
+                    Selesai
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="schedule-card">
+
+            <div class="schedule-time">
+
+                13:00 - 14:00 WIB
+
+            </div>
+
+            <div class="schedule-info">
+
+                <h3>User</h3>
+
+                <p>
+                    Semester 4 •
+                    E-Learning
+                </p>
+
+            </div>
+
+            <div class="schedule-action">
+
+                <button class="detail-btn">
+
+                    Detail
+
+                </button>
+
+                <button class="finish-btn"
+                        onclick="finishConsultation(this)">
+
+                    Selesai
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="dosen-jadwal.js"></script>
+
+</body>
+</html>

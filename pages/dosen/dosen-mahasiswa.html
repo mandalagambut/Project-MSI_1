@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Mahasiswa Bimbingan</title>
+
+<link rel="stylesheet"
+href="dosen-mahasiswa.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+
+        <a href="dosen-dashboard.html"
+        class="back-btn">
+
+        ← Dashboard
+
+        </a>
+
+    </div>
+
+    <div class="page-header">
+
+        <h1>Mahasiswa Bimbingan</h1>
+
+        <p>
+            Daftar mahasiswa yang sedang
+            melakukan konsultasi akademik.
+        </p>
+
+    </div>
+
+    <div class="student-grid">
+
+        <div class="student-card">
+
+            <div class="student-header">
+
+                <div class="avatar">
+
+                    U
+
+                </div>
+
+                <div>
+
+                    <h3>User</h3>
+
+                    <span>
+                        Semester 6
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="student-body">
+
+                <p>
+                    Media Pembelajaran Digital
+                </p>
+
+                <div class="info-row">
+
+                    <span>
+                        Total Konsultasi
+                    </span>
+
+                    <strong>8</strong>
+
+                </div>
+
+                <div class="info-row">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong class="status active">
+
+                        Aktif
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="student-action">
+
+                <button onclick="showDetail()">
+
+                    Detail
+
+                </button>
+
+                <button onclick="showNote()">
+
+                    Catatan
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="student-card">
+
+            <div class="student-header">
+
+                <div class="avatar">
+
+                    U
+
+                </div>
+
+                <div>
+
+                    <h3>User</h3>
+
+                    <span>
+                        Semester 4
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="student-body">
+
+                <p>
+                    E-Learning
+                </p>
+
+                <div class="info-row">
+
+                    <span>
+                        Total Konsultasi
+                    </span>
+
+                    <strong>4</strong>
+
+                </div>
+
+                <div class="info-row">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong class="status revision">
+
+                        Revisi
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="student-action">
+
+                <button onclick="showDetail()">
+
+                    Detail
+
+                </button>
+
+                <button onclick="showNote()">
+
+                    Catatan
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="dosen-mahasiswa.js"></script>
+
+</body>
+</html>

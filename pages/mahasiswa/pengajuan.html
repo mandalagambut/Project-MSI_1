@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ajukan Konsultasi | TP Consult</title>
+
+    <link rel="stylesheet" href="pengajuan.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>TP Consult</h2>
+            <span>Mahasiswa</span>
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="mahasiswa-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="#" class="active">
+                Ajukan Konsultasi
+            </a>
+
+            <a href="riwayat.html">
+                Riwayat Konsultasi
+            </a>
+
+            <a href="notifikasi.html">
+                Notifikasi
+            </a>
+
+            <a href="../../index.html" onclick="logout()">
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Ajukan Konsultasi</h1>
+
+                <p>
+                    Form pengajuan konsultasi akademik dan non-akademik
+                </p>
+
+            </div>
+
+            <button onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <div class="form-card">
+
+            <form id="consultationForm">
+
+                <div class="form-group">
+
+                    <label>Jenis Konsultasi</label>
+
+                    <select id="consultationType">
+
+                        <option value="">
+                            Pilih Jenis Konsultasi
+                        </option>
+
+                        <option value="akademik">
+                            Akademik
+                        </option>
+
+                        <option value="nonakademik">
+                            Non-Akademik
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Kategori</label>
+
+                    <select id="category">
+
+                        <option>
+                            Pilih Jenis Konsultasi Terlebih Dahulu
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Semester</label>
+
+                    <select>
+
+                        <option>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Dosen Tujuan</label>
+
+                    <select>
+
+                        <option>Dosen, M.Pd.</option>
+                        <option>Dosen, M.T.</option>
+                        <option>Dosen, M.Kom.</option>
+                        <option>Dosen, M.Ed.</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Tingkat Prioritas</label>
+
+                    <select>
+
+                        <option>Rendah</option>
+                        <option>Sedang</option>
+                        <option>Tinggi</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Judul Konsultasi</label>
+
+                    <input
+                    type="text"
+                    placeholder="Masukkan judul konsultasi">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Deskripsi Konsultasi</label>
+
+                    <textarea rows="6"
+                    placeholder="Jelaskan tujuan konsultasi..."></textarea>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Tanggal</label>
+
+                        <input type="date">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Waktu</label>
+
+                        <input type="time">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Metode Konsultasi</label>
+
+                    <select>
+
+                        <option>Tatap Muka</option>
+
+                        <option>Zoom Meeting</option>
+
+                        <option>Google Meet</option>
+
+                        <option>WhatsApp</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Lampiran</label>
+
+                    <input
+                    type="file"
+                    accept=".pdf,.doc,.docx,.ppt,.pptx">
+
+                </div>
+
+                <button
+                type="submit"
+                class="submit-btn">
+
+                    Kirim Pengajuan
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="pengajuan.js"></script>
+
+</body>
+</html>

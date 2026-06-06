@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Notifikasi | TP Consult</title>
+
+<link rel="stylesheet"
+href="notifikasi.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>TP Consult</h2>
+            <span>Mahasiswa</span>
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="mahasiswa-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="pengajuan.html">
+                Ajukan Konsultasi
+            </a>
+
+            <a href="riwayat.html">
+                Riwayat Konsultasi
+            </a>
+
+            <a href="#" class="active">
+                Notifikasi
+            </a>
+
+            <a href="../../index.html"
+               onclick="logout()">
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Notifikasi</h1>
+
+                <p>
+                    Informasi terbaru terkait konsultasi Anda
+                </p>
+
+            </div>
+
+            <div>
+
+                <button onclick="markAllRead()">
+
+                    Tandai Semua Dibaca
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="notification-list">
+
+            <div class="notification-card unread">
+
+                <div class="icon success">
+
+                    ✓
+
+                </div>
+
+                <div class="notification-content">
+
+                    <h3>
+                        Konsultasi Disetujui
+                    </h3>
+
+                    <p>
+
+                        Pengajuan konsultasi
+                        Media Pembelajaran
+                        telah disetujui oleh
+                        Dosen, M.Pd.
+
+                    </p>
+
+                    <span>
+                        10 menit yang lalu
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card unread">
+
+                <div class="icon info">
+
+                    📅
+
+                </div>
+
+                <div class="notification-content">
+
+                    <h3>
+                        Jadwal Konsultasi Dibuat
+                    </h3>
+
+                    <p>
+
+                        Konsultasi dijadwalkan
+                        pada 20 Juni 2026
+                        pukul 09.00 WIB.
+
+                    </p>
+
+                    <span>
+                        1 jam yang lalu
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card">
+
+                <div class="icon warning">
+
+                    ⚠
+
+                </div>
+
+                <div class="notification-content">
+
+                    <h3>
+                        Perubahan Jadwal
+                    </h3>
+
+                    <p>
+
+                        Jadwal konsultasi
+                        dipindahkan ke
+                        pukul 13.00 WIB.
+
+                    </p>
+
+                    <span>
+                        Kemarin
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card">
+
+                <div class="icon reject">
+
+                    ✕
+
+                </div>
+
+                <div class="notification-content">
+
+                    <h3>
+                        Konsultasi Ditolak
+                    </h3>
+
+                    <p>
+
+                        Pengajuan konsultasi
+                        Skripsi ditolak
+                        karena jadwal penuh.
+
+                    </p>
+
+                    <span>
+                        3 hari yang lalu
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card">
+
+                <div class="icon message">
+
+                    💬
+
+                </div>
+
+                <div class="notification-content">
+
+                    <h3>
+                        Catatan dari Dosen
+                    </h3>
+
+                    <p>
+
+                        Silakan perbaiki
+                        storyboard dan kirim
+                        kembali pada konsultasi berikutnya.
+
+                    </p>
+
+                    <span>
+                        5 hari yang lalu
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="notifikasi.js"></script>
+
+</body>
+
+</html>

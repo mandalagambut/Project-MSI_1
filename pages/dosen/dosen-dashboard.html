@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen | TP Consult</title>
+
+    <link rel="stylesheet" href="dosen-dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>TP Consult</h2>
+            <span>Dosen</span>
+        </div>
+
+        <nav class="menu">
+            <a href="#/#/index.html" class="active">Dashboard</a>
+            <a href="dosen-konsultasi.html">Permintaan Konsultasi</a>
+            <a href="dosen-jadwal.html">Jadwal Konsultasi</a>
+            <a href="dosen-mahasiswa.html">Mahasiswa Bimbingan</a>
+            <a href="dosen-riwayat.html">Riwayat</a>
+            <a href="dosen-notifikasi.html">Notifikasi</a>
+            <a href="../../index.html" onclick="logout()">
+                Logout
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard Dosen</h1>
+                <p id="namaDosen">Dosen, M.Pd.</p>
+            </div>
+
+            <button onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <section class="stats">
+
+            <div class="card stat">
+                <h3>Menunggu Persetujuan</h3>
+                <h2>12</h2>
+            </div>
+
+            <div class="card stat">
+                <h3>Konsultasi Hari Ini</h3>
+                <h2>8</h2>
+            </div>
+
+            <div class="card stat">
+                <h3>Mahasiswa Bimbingan</h3>
+                <h2>46</h2>
+            </div>
+
+            <div class="card stat">
+                <h3>Selesai Bulan Ini</h3>
+                <h2>32</h2>
+            </div>
+
+        </section>
+
+        <section class="request-section">
+
+            <div class="card">
+
+                <h3>Permintaan Konsultasi Terbaru</h3>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Mahasiswa</th>
+                            <th>Semester</th>
+                            <th>Kategori</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>User</td>
+                            <td>6</td>
+                            <td>Media Pembelajaran</td>
+                            <td>
+                                <button class="approve"
+                                onclick="approveConsultation()">
+                                    Setujui
+                                </button>
+
+                                <button class="reject"
+                                onclick="rejectConsultation()">
+                                    Tolak
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="dashboard-dosen.js"></script>
+
+</body>
+</html>
